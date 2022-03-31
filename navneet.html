@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <input type="text" id="txt" />
+    <input type="button" value="" id="add" />
+    <ul id="list">
+    </ul>
+</body>
+<script>
+    // // document.getElementById("add").onclick = function (e) {
+    // //     var text = document.getElementById("txt");
+    // //     console.log(e)
+    // //     let li = document.createElement('li');
+    // //     li.innerText = 'harsh'
+    // //     // var li = "<li>" + text + "</li>";
+    // //     document.getElementById("list").appendChild(li);
+    // // }
+    // let add = document.getElementById('add');
+    // let input = document.getElementById('txt');
+    // let ol = document.getElementById('list');
+    // let li = document.createElement('li');
+    // let t = input.value;
+    // //li.innerText = 't';
+    // // input.addEventListener('change', (e)=>{
+    // //     console.log(e.target.value)
+    // // })
+    // add.addEventListener('click', function (){
+    //     //document.write(input.value)
+    //    li.appendChild(document.createTextNode(input.value));
+    //    ol.appendChild(li); 
+    // })
+    // function change(){
+    //     var x = document.getElementById("txt").value;
+    //     console.log(x);
+    // }
+    let input = document.querySelector('.txt');
+    let submit = document.querySelector('.add');
+    let listd = document.querySelector('ul');
+    submitBtn.addEventListener('click', (e) => {
+        let item = document.createElement('li');
+        item.textContent = input.value;
+        listd.append(item);
+    }); -->
+    <input type="text" id="txt" placeholder="Add a todo item" />
+<input type="submit" value="Add" id="add"/>
+<ul>
+</ul></body><script>
+let input = document.getElementById("txt");
+let submit = document.getElementById("add");
+let list = document.querySelector('ul');
+submit.addEventListener('click', () => {
+  let item = document.createElement('li');
+  item.textContent = input.value;
+  list.append(item);
+});
+
+</script>
+
+</html>
